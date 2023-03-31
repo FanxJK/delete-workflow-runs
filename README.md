@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
-        uses: ActionsRML/delete-workflow-runs@main
+        uses: FanxJK/delete-workflow-runs@main
         with:
           token: ${{ secrets.AUTH_PAT }}
           repository: ${{ github.repository }}
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
-        uses: ActionsRML/delete-workflow-runs@main
+        uses: FanxJK/delete-workflow-runs@main
         with:
           token: ${{ secrets.AUTH_PAT }}
           repository: ${{ github.repository }}
